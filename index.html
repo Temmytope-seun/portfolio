@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temmy | Data Scientist & AI Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>T<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#writing" class="nav-link">Writing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#writing" class="mobile-link">Writing</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content hero-centered">
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">
+        <span class="name-text">Temmy</span>
+      </h1>
+      <div class="hero-role reveal">
+        <span class="role-prefix">I build </span>
+        <span class="role-cycler" id="role-cycler"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline reveal">
+        Transforming raw data into intelligent solutions that drive real-world impact.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">01.</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a passionate <strong>Data Scientist & AI/ML Engineer</strong> with a deep love for turning complex datasets into actionable insights and building intelligent systems that solve real problems.
+          </p>
+          <p>
+            My journey spans the full ML lifecycle — from exploratory data analysis and feature engineering to model deployment and monitoring in production. I thrive at the intersection of <strong>statistics, engineering, and creativity</strong>.
+          </p>
+          <p>
+            When I'm not training models or wrangling data pipelines, you'll find me exploring the latest research papers, contributing to open-source projects, and sharing knowledge with the community.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <div class="image-wrapper">
+            <div class="image-placeholder">
+              <div class="avatar-ring"></div>
+              <div class="avatar-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="orbit orbit-1">
+                <div class="orbit-dot"><i class="fab fa-python"></i></div>
+              </div>
+              <div class="orbit orbit-2">
+                <div class="orbit-dot"><i class="fas fa-robot"></i></div>
+              </div>
+              <div class="orbit orbit-3">
+                <div class="orbit-dot"><i class="fas fa-chart-line"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">02.</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior ML Engineer</h3>
+                <span class="timeline-company">TechCorp AI</span>
+              </div>
+              <span class="timeline-date">2023 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led development of real-time fraud detection system, reducing false positives by 40% using ensemble learning</li>
+              <li>Architected end-to-end MLOps pipeline with Kubeflow & MLflow, cutting deployment time from days to hours</li>
+              <li>Mentored junior engineers and drove adoption of best practices across a 10-person team</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Kubeflow</span>
+              <span class="tag">GCP</span>
+              <span class="tag">MLflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Scientist</h3>
+                <span class="timeline-company">DataDriven Inc.</span>
+              </div>
+              <span class="timeline-date">2022 — 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built NLP pipeline for sentiment analysis on 5M+ customer reviews, driving product strategy decisions</li>
+              <li>Developed recommendation engine that increased user engagement by 28% and revenue by $2M annually</li>
+              <li>Created interactive dashboards using Plotly & Streamlit for C-suite reporting</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">scikit-learn</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Spark</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">ML Research Intern</h3>
+                <span class="timeline-company">AI Research Lab</span>
+              </div>
+              <span class="timeline-date">2021 — 2022</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Researched and implemented novel attention mechanisms for time-series forecasting</li>
+              <li>Published findings in internal tech blog, achieving 2K+ views from the ML community</li>
+              <li>Contributed to open-source transformer library with 500+ GitHub stars</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">03.</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Featured Projects -->
+      <div class="featured-projects">
+
+        <!-- Featured 1: Water Potability -->
+        <div class="featured-project reveal">
+          <div class="project-visual">
+            <div class="project-mockup water">
+              <div class="water-visual">
+                <div class="water-params">
+                  <div class="param-row"><span class="param-name">pH</span><div class="param-bar"><div class="param-fill" style="width:72%"></div></div><span class="param-val">7.2</span></div>
+                  <div class="param-row"><span class="param-name">Hardness</span><div class="param-bar"><div class="param-fill" style="width:55%"></div></div><span class="param-val">180</span></div>
+                  <div class="param-row"><span class="param-name">Sulfate</span><div class="param-bar"><div class="param-fill warning" style="width:88%"></div></div><span class="param-val">368</span></div>
+                  <div class="param-row"><span class="param-name">Turbidity</span><div class="param-bar"><div class="param-fill" style="width:40%"></div></div><span class="param-val">3.9</span></div>
+                  <div class="param-row"><span class="param-name">Chloramines</span><div class="param-bar"><div class="param-fill" style="width:60%"></div></div><span class="param-val">7.1</span></div>
+                </div>
+                <div class="prediction-badge potable">✓ Potable</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-label">Featured Project</span>
+            <h3 class="project-title">Water Potability Prediction API</h3>
+            <div class="project-description">
+              <p>An end-to-end MLOps pipeline that predicts whether water is safe to drink based on 9 physicochemical parameters (pH, hardness, sulfate, turbidity, etc.). Features automated data ingestion, validation, transformation, and model training — exposed via a Flask REST API with MLflow experiment tracking and Docker containerization.</p>
+            </div>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>MLflow</span>
+              <span>Docker</span>
+              <span>scikit-learn</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Temmytope-seun/waterPotability" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured 2: ASL Numbers -->
+        <div class="featured-project reverse reveal">
+          <div class="project-visual">
+            <div class="project-mockup asl">
+              <div class="asl-visual">
+                <div class="asl-grid">
+                  <div class="asl-cell active"><span>✋</span><span class="asl-label">1</span></div>
+                  <div class="asl-cell"><span>✌️</span><span class="asl-label">2</span></div>
+                  <div class="asl-cell"><span>🤟</span><span class="asl-label">3</span></div>
+                  <div class="asl-cell"><span>🖐️</span><span class="asl-label">4</span></div>
+                  <div class="asl-cell"><span>👊</span><span class="asl-label">5</span></div>
+                  <div class="asl-cell"><span>🤙</span><span class="asl-label">6</span></div>
+                </div>
+                <div class="asl-result">
+                  <span class="asl-confidence">Confidence: 97.3%</span>
+                  <span class="asl-pred">Predicted: <strong>1</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-label">Featured Project</span>
+            <h3 class="project-title">ASL Numbers Recognition</h3>
+            <div class="project-description">
+              <p>Transfer learning model using TensorFlow Hub to classify American Sign Language (ASL) hand signs for numbers 1–9. Leverages pre-trained image feature extractors fine-tuned on a custom ASL dataset organized by class folders, enabling high-accuracy recognition with minimal training data.</p>
+            </div>
+            <div class="project-tech">
+              <span>TensorFlow Hub</span>
+              <span>Transfer Learning</span>
+              <span>Computer Vision</span>
+              <span>Jupyter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Temmytope-seun/aslNumbers" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Grid -->
+      <h3 class="other-projects-title reveal">Other Noteworthy Projects</h3>
+      <div class="projects-grid">
+
+        <!-- ViTransformers -->
+        <div class="project-card reveal">
+          <div class="card-header">
+            <i class="fas fa-folder-open card-folder"></i>
+            <div class="card-links">
+              <a href="https://github.com/Temmytope-seun/ViTransformers" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>Early Skin Cancer Detection: Deep Learning Benchmark</h4>
+          <p>Comparative benchmark of CNN architectures (MobileNet, Inception) vs. Vision Transformers on the ISIC dermatoscopic dataset for melanoma detection. Evaluated models via AUC-ROC, F1-score, and accuracy. Deployed the top-performing model with Flask and benchmarked cloud inference APIs against AutoML solutions for clinical relevance.</p>
+          <div class="card-tech">
+            <span>Vision Transformer</span><span>MobileNet</span><span>Inception</span><span>ISIC</span><span>Flask</span><span>AutoML</span>
+          </div>
+        </div>
+
+        <!-- Text Classification -->
+        <div class="project-card reveal">
+          <div class="card-header">
+            <i class="fas fa-folder-open card-folder"></i>
+            <div class="card-links">
+              <a href="https://github.com/Temmytope-seun/Text_classification" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>Text Classification & Topic Modeling</h4>
+          <p>NLP pipeline combining emotion classification and topic modeling on AI ethics articles from the New York Times. Includes multi-class emotion detection and unsupervised topic discovery.</p>
+          <div class="card-tech">
+            <span>NLP</span><span>Emotion Detection</span><span>Topic Modeling</span>
+          </div>
+        </div>
+
+        <!-- Text Summarization -->
+        <div class="project-card reveal featured-card">
+          <div class="card-header">
+            <i class="fas fa-folder-open card-folder"></i>
+            <div class="card-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <span class="bootcamp-badge">NLP · Hugging Face</span>
+          <h4>End-to-End Text Summarization</h4>
+          <p>Full-stack NLP pipeline for automatic text summarization using Hugging Face Transformers (PEGASUS/T5). Covers data ingestion, model fine-tuning on CNN/DailyMail, evaluation with ROUGE metrics, and deployment via FastAPI — following a modular MLOps project structure.</p>
+          <div class="card-tech">
+            <span>Hugging Face</span><span>Transformers</span><span>PEGASUS</span><span>FastAPI</span><span>ROUGE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">04.</span>
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-simple">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-brain"></i> Machine Learning</h3>
+          <div class="skill-chips">
+            <span class="chip">Supervised Learning</span>
+            <span class="chip">Deep Learning</span>
+            <span class="chip">NLP / LLMs</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Reinforcement Learning</span>
+            <span class="chip">Time Series</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-code"></i> Languages & Frameworks</h3>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">Hugging Face</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">SQL</span>
+            <span class="chip">R</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-cloud"></i> MLOps & Cloud</h3>
+          <div class="skill-chips">
+            <span class="chip">MLflow</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">AWS</span>
+            <span class="chip">GCP</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">Apache Airflow</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-database"></i> Data Engineering</h3>
+          <div class="skill-chips">
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Apache Spark</span>
+            <span class="chip">Kafka</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">dbt</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing Section -->
+  <section id="writing">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">05.</span>
+        <h2 class="section-title">Writing</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="writing-intro reveal">I write about building real ML systems — moving beyond notebooks into production-grade pipelines, MLOps practices, and lessons learned along the way.</p>
+      <div class="articles-grid">
+
+        <a href="https://medium.com/@temmytope60/building-a-production-ready-ml-pipeline-in-python-architecture-and-design-patterns-8e0e10ff588a" target="_blank" class="article-card reveal">
+          <div class="article-meta">
+            <span class="article-tag">MLOps</span>
+            <span class="article-tag">Architecture</span>
+            <span class="article-read-time"><i class="fas fa-clock"></i> 7 min read</span>
+          </div>
+          <h3 class="article-title">Building a Production-Ready ML Pipeline in Python: Architecture and Design Patterns</h3>
+          <p class="article-excerpt">A deep dive into structuring ML projects beyond Jupyter notebooks — covering a five-stage pipeline (ingestion → validation → transformation → training → evaluation), YAML-based config management, idempotent design, and MLflow artifact tracking using the Water Potability dataset.</p>
+          <div class="article-footer">
+            <span class="article-platform"><i class="fab fa-medium"></i> Medium</span>
+            <span class="article-arrow">Read article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://medium.com/@temmytope60/mlops-in-practice-experiment-tracking-model-serving-and-security-46caf7eeee66" target="_blank" class="article-card reveal">
+          <div class="article-meta">
+            <span class="article-tag">MLOps</span>
+            <span class="article-tag">Flask</span>
+            <span class="article-tag">Security</span>
+            <span class="article-read-time"><i class="fas fa-clock"></i> 7 min read</span>
+          </div>
+          <h3 class="article-title">MLOps in Practice: Experiment Tracking, Model Serving, and Security</h3>
+          <p class="article-excerpt">From a trained model file to a live API — and the pitfalls in between. Covers structured experiment tracking with MLflow & DagsHub, efficient model serving with Flask, and three critical security risks every ML engineer should know before going to production.</p>
+          <div class="article-footer">
+            <span class="article-platform"><i class="fab fa-medium"></i> Medium</span>
+            <span class="article-arrow">Read article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">06.</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <h3>Let's Work Together</h3>
+          <p>I'm currently open to new opportunities, freelance projects, and collaborations. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-links">
+            <a href="mailto:temmytope60@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">temmytope60@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/temmy" class="contact-item" target="_blank">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/temmy</span>
+              </div>
+            </a>
+            <a href="https://github.com/temmy" class="contact-item" target="_blank">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/temmy</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Idea / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Designed & Built by <span class="accent">Temmy</span></p>
+      <p class="footer-sub">Data Scientist · AI Engineer · ML Engineer</p>
+      <div class="footer-socials">
+        <a href="https://github.com/temmy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/temmy" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:temmytope60@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/temmy" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
