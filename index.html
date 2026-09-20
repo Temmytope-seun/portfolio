@@ -3,16 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temmy | Data Scientist & AI Engineer</title>
+  <title>Temitope Oluwaseun | Data Scientist & AI Engineer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Temitope Oluwaseun Adegbeyeni — AI/ML Engineer with 4+ years of experience building production-grade ML pipelines, LLM-powered applications, and MLOps infrastructure on AWS and Azure. MSc AI (Distinction), University of Salford." />
+  <meta name="keywords" content="Data Scientist, AI Engineer, Machine Learning, LLM, NLP, MLOps, Python, Hugging Face, LangChain, AWS, Azure" />
+  <meta name="author" content="Temitope Oluwaseun Adegbeyeni" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://temitope-o.netlify.app" />
+  <meta property="og:title"       content="Temitope Oluwaseun | Data Scientist & AI Engineer" />
+  <meta property="og:description" content="AI/ML Engineer with 4+ years of experience building production-grade ML pipelines, LLM-powered applications, and MLOps infrastructure on AWS and Azure." />
+  <meta property="og:image"       content="https://temitope-o.netlify.app/profile.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Temitope Oluwaseun | Data Scientist & AI Engineer" />
+  <meta name="twitter:description" content="AI/ML Engineer with 4+ years of experience building production-grade ML pipelines, LLM-powered applications, and MLOps infrastructure on AWS and Azure." />
+  <meta name="twitter:image"       content="https://temitope-o.netlify.app/profile.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="canonical" href="https://temitope-o.netlify.app" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Temitope Oluwaseun Adegbeyeni",
+    "url": "https://temitope-o.netlify.app",
+    "image": "https://temitope-o.netlify.app/profile.jpg",
+    "jobTitle": "AI/ML Engineer",
+    "description": "AI/ML Engineer with 4+ years of experience building production-grade ML pipelines, LLM-powered applications, and MLOps infrastructure on AWS and Azure.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Salford" },
+      { "@type": "CollegeOrUniversity", "name": "University of Lagos" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/t-oluwaseun/",
+      "https://github.com/Temmytope-seun",
+      "https://medium.com/@temmytope60"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Particle Canvas -->
+
   <canvas id="particle-canvas"></canvas>
 
-  <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
@@ -21,6 +67,7 @@
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#writing" class="nav-link">Writing</a></li>
@@ -32,11 +79,11 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu">
     <ul>
       <li><a href="#about" class="mobile-link">About</a></li>
       <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
       <li><a href="#projects" class="mobile-link">Projects</a></li>
       <li><a href="#skills" class="mobile-link">Skills</a></li>
       <li><a href="#writing" class="mobile-link">Writing</a></li>
@@ -44,35 +91,30 @@
     </ul>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="hero">
-    <div class="hero-content hero-centered">
+    <div class="hero-content">
       <p class="hero-greeting reveal">Hello, I'm</p>
-      <h1 class="hero-name reveal">
-        <span class="name-text">Temmy</span>
-      </h1>
+      <h1 class="hero-name reveal"><span class="name-text">Temitope Oluwaseun</span></h1>
       <div class="hero-role reveal">
-        <span class="role-prefix">I build </span>
+        <span>I build </span>
         <span class="role-cycler" id="role-cycler"></span>
         <span class="cursor-blink">|</span>
       </div>
-      <p class="hero-tagline reveal">
-        Transforming raw data into intelligent solutions that drive real-world impact.
-      </p>
+      <p class="hero-tagline reveal">Transforming raw data into intelligent solutions that drive real-world impact.</p>
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="Temitope_Adegbeyeni_CV.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
       </div>
       <div class="hero-scroll reveal">
-        <div class="scroll-indicator">
-          <div class="scroll-dot"></div>
-        </div>
+        <div class="scroll-indicator"><div class="scroll-dot"></div></div>
         <span>Scroll to explore</span>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
     <div class="section-container">
       <div class="section-header reveal">
@@ -82,22 +124,16 @@
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>
-            I'm a passionate <strong>Data Scientist & AI/ML Engineer</strong> with a deep love for turning complex datasets into actionable insights and building intelligent systems that solve real problems.
-          </p>
-          <p>
-            My journey spans the full ML lifecycle — from exploratory data analysis and feature engineering to model deployment and monitoring in production. I thrive at the intersection of <strong>statistics, engineering, and creativity</strong>.
-          </p>
-          <p>
-            When I'm not training models or wrangling data pipelines, you'll find me exploring the latest research papers, contributing to open-source projects, and sharing knowledge with the community.
-          </p>
+          <p>I'm an AI/ML Engineer with 4+ years of combined industry and research experience, and an MSc in Artificial Intelligence from the University of Salford. My foundation in Computer Engineering gives me a systems-level perspective that shapes how I approach every problem, from data to deployment.</p>
+          <p>I specialise in building production-grade ML pipelines, LLM-powered applications, and MLOps infrastructure on AWS and Azure. Whether it's fine-tuning transformers, designing RAG architectures, or shipping monitoring dashboards that catch model drift before it causes damage, I care about ML that actually works in the real world.</p>
+          <p>I write on Medium about the real challenges of the job: the bugs that took days to track down, the production failures that rewrote how I think about reliability, and the lessons you only learn when a model breaks at 2am.</p>
           <div class="about-stats">
             <div class="stat-card">
-              <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat-card">
-              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
               <span class="stat-label">Years Exp.</span>
             </div>
             <div class="stat-card">
@@ -108,28 +144,14 @@
         </div>
         <div class="about-image reveal">
           <div class="image-wrapper">
-            <div class="image-placeholder">
-              <div class="avatar-ring"></div>
-              <div class="avatar-icon">
-                <i class="fas fa-brain"></i>
-              </div>
-              <div class="orbit orbit-1">
-                <div class="orbit-dot"><i class="fab fa-python"></i></div>
-              </div>
-              <div class="orbit orbit-2">
-                <div class="orbit-dot"><i class="fas fa-robot"></i></div>
-              </div>
-              <div class="orbit orbit-3">
-                <div class="orbit-dot"><i class="fas fa-chart-line"></i></div>
-              </div>
-            </div>
+            <img src="profile.jpg" alt="Temitope Oluwaseun" class="profile-photo" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Experience -->
   <section id="experience">
     <div class="section-container">
       <div class="section-header reveal">
@@ -138,25 +160,56 @@
         <div class="section-line"></div>
       </div>
       <div class="timeline">
+
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Senior ML Engineer</h3>
-                <span class="timeline-company">TechCorp AI</span>
+                <h3 class="timeline-role">AI Engineer</h3>
+                <span class="timeline-company">Waftsoft Consulting · Remote</span>
               </div>
-              <span class="timeline-date">2023 — Present</span>
+              <span class="timeline-date">Oct 2025 — Present</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Led development of real-time fraud detection system, reducing false positives by 40% using ensemble learning</li>
-              <li>Architected end-to-end MLOps pipeline with Kubeflow & MLflow, cutting deployment time from days to hours</li>
-              <li>Mentored junior engineers and drove adoption of best practices across a 10-person team</li>
+              <li>Built prompt-engineered classification pipelines using LangChain and LLaMA 3.1 to categorise 1,000+ free-text survey responses, reducing manual coding effort by 60% and surfacing richer qualitative insight.</li>
+              <li>Conducted large-scale resident survey analysis (2,000+ responses, 300+ variables) using LightGBM and stepwise regression to identify key drivers of satisfaction and public trust, drawing on insurance risk modelling methodology for audience segmentation.</li>
+              <li>Led a team to develop an AI-powered customer service chatbot using LangChain and NLP, trained on over 100,000 customer queries; the system automated 73% of inbound support requests while incorporating content filtering and fairness protocols to ensure safe, unbiased outputs.</li>
+              <li>Deployed inference pipelines on AWS, supporting 30 live decisioning jobs tied to planning workflows.</li>
             </ul>
             <div class="timeline-tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Kubeflow</span>
-              <span class="tag">GCP</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LLaMA 3.1</span>
+              <span class="tag">LightGBM</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI Researcher</h3>
+                <span class="timeline-company">University of Salford · Manchester, UK</span>
+              </div>
+              <span class="timeline-date">Apr 2025 — Sept 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Designed and trained a multilingual conversational AI system using Hugging Face Transformers and Rasa, integrating entity recognition, intent classification, and fallback handling to deliver robust real-time NLP responses via a REST API.</li>
+              <li>Benchmarked CNN architectures (MobileNet, Inception) and Vision Transformers for early melanoma detection on the ISIC dermatoscopic dataset, evaluating models across AUC-ROC, F1-score, and accuracy; findings informed clinical relevance assessments and cloud-based AutoML comparisons.</li>
+              <li>Developed an end-to-end ML pipeline in Azure ML Studio for predicting student dropout risk using KNN and decision tree classifiers, achieving over 85% accuracy with MLflow experiment tracking and data drift monitoring integrated throughout.</li>
+              <li>Trained a custom YOLOv8 object detection model on a manually annotated video dataset for real-time human fall detection, deploying the model as a Flask microservice optimised for low-latency inference and future edge deployment.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Hugging Face</span>
+              <span class="tag">Rasa</span>
+              <span class="tag">YOLOv8</span>
+              <span class="tag">Azure ML</span>
+              <span class="tag">Vision Transformers</span>
               <span class="tag">MLflow</span>
             </div>
           </div>
@@ -167,67 +220,98 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Data Scientist</h3>
-                <span class="timeline-company">DataDriven Inc.</span>
+                <h3 class="timeline-role">AI Engineer</h3>
+                <span class="timeline-company">Slink Digital Technologies · Ogun State, Nigeria</span>
               </div>
-              <span class="timeline-date">2022 — 2023</span>
+              <span class="timeline-date">Nov 2021 — Aug 2024</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Built NLP pipeline for sentiment analysis on 5M+ customer reviews, driving product strategy decisions</li>
-              <li>Developed recommendation engine that increased user engagement by 28% and revenue by $2M annually</li>
-              <li>Created interactive dashboards using Plotly & Streamlit for C-suite reporting</li>
+              <li>Led end-to-end ML pipeline development using Azure ML Studio and MLflow, reducing model deployment turnaround by standardising experiment tracking, versioning, and redeployment workflows.</li>
+              <li>Implemented CI/CD pipelines with GitHub Actions to automate model retraining and redeployment, cutting manual release effort and improving delivery consistency.</li>
+              <li>Deployed production monitoring dashboards (Grafana + PostgreSQL) with automated alerts for model drift, latency spikes, and accuracy degradation, enabling proactive model maintenance.</li>
+              <li>Conducted sentiment analysis on customer support interactions using NLTK, delivering actionable insights that informed product and service improvements for client teams.</li>
+              <li>Built and maintained versioned ML projects with DVC for data and model version control alongside MLflow for reproducible experiment tracking.</li>
+              <li>Evaluated and optimised existing AI models for performance, fairness, and interpretability; maintained production models with robust retraining strategies on cloud infrastructure.</li>
             </ul>
             <div class="timeline-tags">
-              <span class="tag">scikit-learn</span>
-              <span class="tag">NLP</span>
-              <span class="tag">Spark</span>
-              <span class="tag">Streamlit</span>
+              <span class="tag">Azure ML</span>
+              <span class="tag">MLflow</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Grafana</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">DVC</span>
+              <span class="tag">NLTK</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">ML Research Intern</h3>
-                <span class="timeline-company">AI Research Lab</span>
-              </div>
-              <span class="timeline-date">2021 — 2022</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Researched and implemented novel attention mechanisms for time-series forecasting</li>
-              <li>Published findings in internal tech blog, achieving 2K+ views from the ML community</li>
-              <li>Contributed to open-source transformer library with 500+ GitHub stars</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag">TensorFlow</span>
-              <span class="tag">Transformers</span>
-              <span class="tag">Research</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
+  <!-- Education -->
+  <section id="education">
     <div class="section-container">
       <div class="section-header reveal">
         <span class="section-number">03.</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3 class="edu-degree">MSc Artificial Intelligence</h3>
+          <span class="edu-grade">Distinction</span>
+          <div class="edu-school">
+            <span class="edu-institution">University of Salford</span>
+            <span class="edu-location"><i class="fas fa-map-marker-alt"></i> Manchester, UK</span>
+          </div>
+          <span class="edu-date">Sept 2024 – Aug 2025</span>
+          <div class="edu-modules">
+            <span class="edu-module-label">Modules:</span>
+            <span>Deep Learning</span>
+            <span>Machine Learning & Data Mining</span>
+            <span>Big Data Tools & Techniques</span>
+            <span>Natural Language Processing</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <h3 class="edu-degree">BSc Computer Engineering</h3>
+          <span class="edu-sub">Minor: Electrical & Electronics Engineering</span>
+          <div class="edu-school">
+            <span class="edu-institution">University of Lagos</span>
+            <span class="edu-location"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</span>
+          </div>
+          <span class="edu-date">Jan 2016 – Sept 2021</span>
+          <div class="edu-modules">
+            <span class="edu-module-label">Modules:</span>
+            <span>Object-Oriented Programming</span>
+            <span>Data Structures</span>
+            <span>Software Engineering Fundamentals</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-number">04.</span>
         <h2 class="section-title">Projects</h2>
         <div class="section-line"></div>
       </div>
 
-      <!-- Featured Projects -->
       <div class="featured-projects">
 
-        <!-- Featured 1: Water Potability -->
         <div class="featured-project reveal">
           <div class="project-visual">
-            <div class="project-mockup water">
+            <div class="project-mockup">
               <div class="water-visual">
                 <div class="water-params">
                   <div class="param-row"><span class="param-name">pH</span><div class="param-bar"><div class="param-fill" style="width:72%"></div></div><span class="param-val">7.2</span></div>
@@ -244,25 +328,20 @@
             <span class="project-label">Featured Project</span>
             <h3 class="project-title">Water Potability Prediction API</h3>
             <div class="project-description">
-              <p>An end-to-end MLOps pipeline that predicts whether water is safe to drink based on 9 physicochemical parameters (pH, hardness, sulfate, turbidity, etc.). Features automated data ingestion, validation, transformation, and model training — exposed via a Flask REST API with MLflow experiment tracking and Docker containerization.</p>
+              <p>An end-to-end MLOps pipeline that predicts whether water is safe to drink based on 9 physicochemical parameters. Features automated data ingestion, validation, transformation, and model training — exposed via a Flask REST API with MLflow experiment tracking and Docker containerization.</p>
             </div>
             <div class="project-tech">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>MLflow</span>
-              <span>Docker</span>
-              <span>scikit-learn</span>
+              <span>Python</span><span>Flask</span><span>MLflow</span><span>Docker</span><span>scikit-learn</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/Temmytope-seun/waterPotability" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Temmytope-seun/waterPotability" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
 
-        <!-- Featured 2: ASL Numbers -->
         <div class="featured-project reverse reveal">
           <div class="project-visual">
-            <div class="project-mockup asl">
+            <div class="project-mockup">
               <div class="asl-visual">
                 <div class="asl-grid">
                   <div class="asl-cell active"><span>✋</span><span class="asl-label">1</span></div>
@@ -283,46 +362,41 @@
             <span class="project-label">Featured Project</span>
             <h3 class="project-title">ASL Numbers Recognition</h3>
             <div class="project-description">
-              <p>Transfer learning model using TensorFlow Hub to classify American Sign Language (ASL) hand signs for numbers 1–9. Leverages pre-trained image feature extractors fine-tuned on a custom ASL dataset organized by class folders, enabling high-accuracy recognition with minimal training data.</p>
+              <p>Transfer learning model using TensorFlow Hub to classify American Sign Language hand signs for numbers 1–9. Leverages pre-trained image feature extractors fine-tuned on a custom ASL dataset, enabling high-accuracy recognition with minimal training data.</p>
             </div>
             <div class="project-tech">
-              <span>TensorFlow Hub</span>
-              <span>Transfer Learning</span>
-              <span>Computer Vision</span>
-              <span>Jupyter</span>
+              <span>TensorFlow Hub</span><span>Transfer Learning</span><span>Computer Vision</span><span>Jupyter</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/Temmytope-seun/aslNumbers" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Temmytope-seun/aslNumbers" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
+
       </div>
 
-      <!-- Other Projects Grid -->
       <h3 class="other-projects-title reveal">Other Noteworthy Projects</h3>
       <div class="projects-grid">
 
-        <!-- ViTransformers -->
         <div class="project-card reveal">
           <div class="card-header">
             <i class="fas fa-folder-open card-folder"></i>
             <div class="card-links">
-              <a href="https://github.com/Temmytope-seun/ViTransformers" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Temmytope-seun/ViTransformers" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
             </div>
           </div>
           <h4>Early Skin Cancer Detection: Deep Learning Benchmark</h4>
-          <p>Comparative benchmark of CNN architectures (MobileNet, Inception) vs. Vision Transformers on the ISIC dermatoscopic dataset for melanoma detection. Evaluated models via AUC-ROC, F1-score, and accuracy. Deployed the top-performing model with Flask and benchmarked cloud inference APIs against AutoML solutions for clinical relevance.</p>
+          <p>Comparative benchmark of CNN architectures (MobileNet, Inception) vs. Vision Transformers on the ISIC dermatoscopic dataset for melanoma detection. Evaluated via AUC-ROC, F1-score, and accuracy. Deployed the top-performing model with Flask and benchmarked against AutoML solutions.</p>
           <div class="card-tech">
             <span>Vision Transformer</span><span>MobileNet</span><span>Inception</span><span>ISIC</span><span>Flask</span><span>AutoML</span>
           </div>
         </div>
 
-        <!-- Text Classification -->
         <div class="project-card reveal">
           <div class="card-header">
             <i class="fas fa-folder-open card-folder"></i>
             <div class="card-links">
-              <a href="https://github.com/Temmytope-seun/Text_classification" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Temmytope-seun/Text_classification" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
             </div>
           </div>
           <h4>Text Classification & Topic Modeling</h4>
@@ -332,31 +406,30 @@
           </div>
         </div>
 
-        <!-- Text Summarization -->
-        <div class="project-card reveal featured-card">
+        <div class="project-card featured-card reveal">
           <div class="card-header">
             <i class="fas fa-folder-open card-folder"></i>
             <div class="card-links">
               <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
-          <span class="bootcamp-badge">NLP · Hugging Face</span>
+          <span class="project-badge">NLP · Hugging Face</span>
           <h4>End-to-End Text Summarization</h4>
-          <p>Full-stack NLP pipeline for automatic text summarization using Hugging Face Transformers (PEGASUS/T5). Covers data ingestion, model fine-tuning on CNN/DailyMail, evaluation with ROUGE metrics, and deployment via FastAPI — following a modular MLOps project structure.</p>
+          <p>Full-stack NLP pipeline for automatic text summarization using Hugging Face Transformers (PEGASUS/T5). Covers data ingestion, model fine-tuning on CNN/DailyMail, evaluation with ROUGE metrics, and deployment via FastAPI with a modular MLOps project structure.</p>
           <div class="card-tech">
-            <span>Hugging Face</span><span>Transformers</span><span>PEGASUS</span><span>FastAPI</span><span>ROUGE</span>
+            <span>Hugging Face</span><span>PEGASUS</span><span>FastAPI</span><span>ROUGE</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills">
     <div class="section-container">
       <div class="section-header reveal">
-        <span class="section-number">04.</span>
+        <span class="section-number">05.</span>
         <h2 class="section-title">Skills & Tools</h2>
         <div class="section-line"></div>
       </div>
@@ -381,7 +454,6 @@
             <span class="chip">Hugging Face</span>
             <span class="chip">scikit-learn</span>
             <span class="chip">SQL</span>
-            <span class="chip">R</span>
           </div>
         </div>
         <div class="skill-group reveal">
@@ -402,42 +474,40 @@
             <span class="chip">Pandas</span>
             <span class="chip">NumPy</span>
             <span class="chip">Apache Spark</span>
-            <span class="chip">Kafka</span>
             <span class="chip">PostgreSQL</span>
             <span class="chip">MongoDB</span>
-            <span class="chip">dbt</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Writing Section -->
+  <!-- Writing -->
   <section id="writing">
     <div class="section-container">
       <div class="section-header reveal">
-        <span class="section-number">05.</span>
+        <span class="section-number">06.</span>
         <h2 class="section-title">Writing</h2>
         <div class="section-line"></div>
       </div>
       <p class="writing-intro reveal">I write about building real ML systems — moving beyond notebooks into production-grade pipelines, MLOps practices, and lessons learned along the way.</p>
       <div class="articles-grid">
 
-        <a href="https://medium.com/@temmytope60/building-a-production-ready-ml-pipeline-in-python-architecture-and-design-patterns-8e0e10ff588a" target="_blank" class="article-card reveal">
+        <a href="https://medium.com/@temmytope60/building-a-production-ready-ml-pipeline-in-python-architecture-and-design-patterns-8e0e10ff588a" target="_blank" rel="noopener noreferrer" class="article-card reveal">
           <div class="article-meta">
             <span class="article-tag">MLOps</span>
             <span class="article-tag">Architecture</span>
             <span class="article-read-time"><i class="fas fa-clock"></i> 7 min read</span>
           </div>
           <h3 class="article-title">Building a Production-Ready ML Pipeline in Python: Architecture and Design Patterns</h3>
-          <p class="article-excerpt">A deep dive into structuring ML projects beyond Jupyter notebooks — covering a five-stage pipeline (ingestion → validation → transformation → training → evaluation), YAML-based config management, idempotent design, and MLflow artifact tracking using the Water Potability dataset.</p>
+          <p class="article-excerpt">A deep dive into structuring ML projects beyond Jupyter notebooks — covering a five-stage pipeline, YAML-based config management, idempotent design, and MLflow artifact tracking using the Water Potability dataset.</p>
           <div class="article-footer">
             <span class="article-platform"><i class="fab fa-medium"></i> Medium</span>
             <span class="article-arrow">Read article <i class="fas fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <a href="https://medium.com/@temmytope60/mlops-in-practice-experiment-tracking-model-serving-and-security-46caf7eeee66" target="_blank" class="article-card reveal">
+        <a href="https://medium.com/@temmytope60/mlops-in-practice-experiment-tracking-model-serving-and-security-46caf7eeee66" target="_blank" rel="noopener noreferrer" class="article-card reveal">
           <div class="article-meta">
             <span class="article-tag">MLOps</span>
             <span class="article-tag">Flask</span>
@@ -445,7 +515,7 @@
             <span class="article-read-time"><i class="fas fa-clock"></i> 7 min read</span>
           </div>
           <h3 class="article-title">MLOps in Practice: Experiment Tracking, Model Serving, and Security</h3>
-          <p class="article-excerpt">From a trained model file to a live API — and the pitfalls in between. Covers structured experiment tracking with MLflow & DagsHub, efficient model serving with Flask, and three critical security risks every ML engineer should know before going to production.</p>
+          <p class="article-excerpt">From a trained model file to a live API — and the pitfalls in between. Covers experiment tracking with MLflow & DagsHub, model serving with Flask, and three critical security risks before going to production.</p>
           <div class="article-footer">
             <span class="article-platform"><i class="fab fa-medium"></i> Medium</span>
             <span class="article-arrow">Read article <i class="fas fa-arrow-right"></i></span>
@@ -456,11 +526,11 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <div class="section-container">
       <div class="section-header reveal">
-        <span class="section-number">06.</span>
+        <span class="section-number">07.</span>
         <h2 class="section-title">Get In Touch</h2>
         <div class="section-line"></div>
       </div>
@@ -469,25 +539,25 @@
           <h3>Let's Work Together</h3>
           <p>I'm currently open to new opportunities, freelance projects, and collaborations. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!</p>
           <div class="contact-links">
-            <a href="mailto:temmytope60@gmail.com" class="contact-item">
+            <a href="mailto:oluwa.seun4516@gmail.com" class="contact-item">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <span class="contact-label">Email</span>
-                <span class="contact-value">temmytope60@gmail.com</span>
+                <span class="contact-value">oluwa.seun4516@gmail.com</span>
               </div>
             </a>
-            <a href="https://linkedin.com/in/temmy" class="contact-item" target="_blank">
+            <a href="https://www.linkedin.com/in/t-oluwaseun/" target="_blank" rel="noopener noreferrer" class="contact-item">
               <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
               <div>
                 <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">linkedin.com/in/temmy</span>
+                <span class="contact-value">linkedin.com/in/t-oluwaseun</span>
               </div>
             </a>
-            <a href="https://github.com/temmy" class="contact-item" target="_blank">
+            <a href="https://github.com/Temmytope-seun" target="_blank" rel="noopener noreferrer" class="contact-item">
               <div class="contact-icon"><i class="fab fa-github"></i></div>
               <div>
                 <span class="contact-label">GitHub</span>
-                <span class="contact-value">github.com/temmy</span>
+                <span class="contact-value">github.com/Temmytope-seun</span>
               </div>
             </a>
           </div>
@@ -518,20 +588,23 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>Designed & Built by <span class="accent">Temmy</span></p>
+      <p>Designed & Built by <span class="accent">Temitope Oluwaseun</span></p>
       <p class="footer-sub">Data Scientist · AI Engineer · ML Engineer</p>
       <div class="footer-socials">
-        <a href="https://github.com/temmy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/temmy" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:temmytope60@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://twitter.com/temmy" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Temmytope-seun" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/t-oluwaseun/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:oluwa.seun4516@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "709e60aa091f488ab4245cba8a231ce2"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
