@@ -124,7 +124,9 @@ function typeRole() {
 
   setTimeout(typeRole, delay);
 }
-typeRole();
+if (roleCycler) {
+  typeRole();
+}
 
 /* =============================================
    Scroll Reveal
@@ -172,41 +174,43 @@ const EMAILJS_PUBLIC_KEY  = 'R53W2abFlYLZE7HZu';   // from emailjs.com > Account
 const EMAILJS_SERVICE_ID  = 'service_fuhpycq';   // from emailjs.com > Email Services
 const EMAILJS_TEMPLATE_ID = 'template_9rwy9mk';  // from emailjs.com > Email Templates
 
-emailjs.init(EMAILJS_PUBLIC_KEY);
-
 const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn          = form.querySelector('button[type="submit"]');
-  const btnText      = btn.querySelector('.btn-text');
-  const originalText = btnText.textContent;
+if (form) {
+  emailjs.init(EMAILJS_PUBLIC_KEY);
 
-  btn.disabled = true;
-  btnText.textContent = 'Sending...';
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn          = form.querySelector('button[type="submit"]');
+    const btnText      = btn.querySelector('.btn-text');
+    const originalText = btnText.textContent;
 
-  emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
-    .then(() => {
-      btnText.textContent  = 'Message Sent!';
-      btn.style.background = 'linear-gradient(135deg, #28c840, #00d4ff)';
-      form.reset();
-      setTimeout(() => {
-        btnText.textContent  = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    })
-    .catch((err) => {
-      console.error('EmailJS error:', err);
-      btnText.textContent = 'Failed — try again';
-      btn.style.background = 'linear-gradient(135deg, #ff4d4d, #ff8c00)';
-      setTimeout(() => {
-        btnText.textContent  = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    });
-});
+    btn.disabled = true;
+    btnText.textContent = 'Sending...';
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+      .then(() => {
+        btnText.textContent  = 'Message Sent!';
+        btn.style.background = 'linear-gradient(135deg, #28c840, #00d4ff)';
+        form.reset();
+        setTimeout(() => {
+          btnText.textContent  = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      })
+      .catch((err) => {
+        console.error('EmailJS error:', err);
+        btnText.textContent = 'Failed — try again';
+        btn.style.background = 'linear-gradient(135deg, #ff4d4d, #ff8c00)';
+        setTimeout(() => {
+          btnText.textContent  = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      });
+  });
+}
 
 /* =============================================
    Smooth Scroll
@@ -239,7 +243,10 @@ const sectionObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.4 });
 
-document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+const scrollSpySections = document.querySelectorAll('section[id]');
+if (scrollSpySections.length > 1) {
+  scrollSpySections.forEach(s => sectionObserver.observe(s));
+}
 
 /* =============================================
    Staggered Reveal Delays

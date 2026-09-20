@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-blog-build",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build:blog": "node scripts/build-blog.js",
+    "preview:blog": "npm run build:blog && npx serve . -l 5000"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.10.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "serve": "^14.2.3"
+  }
+}

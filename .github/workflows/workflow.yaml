@@ -11,6 +11,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install build dependencies
+        run: npm ci
+
+      - name: Build blog
+        run: npm run build:blog
+
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
