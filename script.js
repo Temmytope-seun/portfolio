@@ -73,10 +73,18 @@ animateParticles();
    Navbar
 ============================================= */
 const navbar = document.getElementById('navbar');
+const backToTop = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
+  if (backToTop) backToTop.classList.toggle('visible', window.scrollY > 600);
 });
+
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 /* =============================================
    Mobile Menu

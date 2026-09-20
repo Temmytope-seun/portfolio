@@ -64,19 +64,21 @@
       <a href="#hero" class="nav-logo">
         <span class="logo-bracket">&lt;</span>T<span class="logo-bracket">/&gt;</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#writing" class="nav-link">Writing</a></li>
-        <li><a href="/blog/" class="nav-link">Blog</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="/blog/" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="Temitope_Adegbeyeni_CV.pdf" download class="btn btn-outline nav-cta"><i class="fas fa-download"></i> Download CV</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -87,9 +89,9 @@
       <li><a href="#education" class="mobile-link">Education</a></li>
       <li><a href="#projects" class="mobile-link">Projects</a></li>
       <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#writing" class="mobile-link">Writing</a></li>
       <li><a href="/blog/" class="mobile-link">Blog</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="Temitope_Adegbeyeni_CV.pdf" download class="mobile-link mobile-cta"><i class="fas fa-download"></i> Download CV</a></li>
     </ul>
   </div>
 
@@ -107,7 +109,6 @@
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
-        <a href="Temitope_Adegbeyeni_CV.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
       </div>
       <div class="hero-scroll reveal">
         <div class="scroll-indicator"><div class="scroll-dot"></div></div>
@@ -174,10 +175,10 @@
               <span class="timeline-date">Oct 2025 — Present</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Built prompt-engineered classification pipelines using LangChain and LLaMA 3.1 to categorise 1,000+ free-text survey responses, reducing manual coding effort by 60% and surfacing richer qualitative insight.</li>
-              <li>Conducted large-scale resident survey analysis (2,000+ responses, 300+ variables) using LightGBM and stepwise regression to identify key drivers of satisfaction and public trust, drawing on insurance risk modelling methodology for audience segmentation.</li>
-              <li>Led a team to develop an AI-powered customer service chatbot using LangChain and NLP, trained on over 100,000 customer queries; the system automated 73% of inbound support requests while incorporating content filtering and fairness protocols to ensure safe, unbiased outputs.</li>
-              <li>Deployed inference pipelines on AWS, supporting 30 live decisioning jobs tied to planning workflows.</li>
+              <li>Cut manual survey-coding effort 60% with a LangChain + LLaMA 3.1 pipeline classifying 1,000+ free-text responses.</li>
+              <li>Uncovered key drivers of public trust from 2,000+ resident survey responses (300+ variables) using LightGBM.</li>
+              <li>Automated 73% of inbound support tickets by leading a LangChain/NLP chatbot trained on 100K+ customer queries.</li>
+              <li>Deployed 30 live AWS inference pipelines powering real-time planning decisions.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">LangChain</span>
@@ -201,10 +202,10 @@
               <span class="timeline-date">Apr 2025 — Sept 2025</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Designed and trained a multilingual conversational AI system using Hugging Face Transformers and Rasa, integrating entity recognition, intent classification, and fallback handling to deliver robust real-time NLP responses via a REST API.</li>
-              <li>Benchmarked CNN architectures (MobileNet, Inception) and Vision Transformers for early melanoma detection on the ISIC dermatoscopic dataset, evaluating models across AUC-ROC, F1-score, and accuracy; findings informed clinical relevance assessments and cloud-based AutoML comparisons.</li>
-              <li>Developed an end-to-end ML pipeline in Azure ML Studio for predicting student dropout risk using KNN and decision tree classifiers, achieving over 85% accuracy with MLflow experiment tracking and data drift monitoring integrated throughout.</li>
-              <li>Trained a custom YOLOv8 object detection model on a manually annotated video dataset for real-time human fall detection, deploying the model as a Flask microservice optimised for low-latency inference and future edge deployment.</li>
+              <li>Built a multilingual conversational AI (Hugging Face + Rasa) serving real-time NLP responses via a REST API.</li>
+              <li>Benchmarked CNNs vs. Vision Transformers for melanoma detection on the ISIC dataset across AUC-ROC, F1, and accuracy.</li>
+              <li>Hit 85%+ accuracy predicting student dropout risk with an Azure ML pipeline tracked end-to-end in MLflow.</li>
+              <li>Deployed a custom YOLOv8 model as a low-latency Flask microservice for real-time fall detection.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">Hugging Face</span>
@@ -228,12 +229,12 @@
               <span class="timeline-date">Nov 2021 — Aug 2024</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Led end-to-end ML pipeline development using Azure ML Studio and MLflow, reducing model deployment turnaround by standardising experiment tracking, versioning, and redeployment workflows.</li>
-              <li>Implemented CI/CD pipelines with GitHub Actions to automate model retraining and redeployment, cutting manual release effort and improving delivery consistency.</li>
-              <li>Deployed production monitoring dashboards (Grafana + PostgreSQL) with automated alerts for model drift, latency spikes, and accuracy degradation, enabling proactive model maintenance.</li>
-              <li>Conducted sentiment analysis on customer support interactions using NLTK, delivering actionable insights that informed product and service improvements for client teams.</li>
-              <li>Built and maintained versioned ML projects with DVC for data and model version control alongside MLflow for reproducible experiment tracking.</li>
-              <li>Evaluated and optimised existing AI models for performance, fairness, and interpretability; maintained production models with robust retraining strategies on cloud infrastructure.</li>
+              <li>Cut model deployment turnaround by standardising ML pipelines in Azure ML Studio and MLflow.</li>
+              <li>Automated model retraining and redeployment via GitHub Actions CI/CD, cutting manual release effort.</li>
+              <li>Caught model drift and latency issues early with automated Grafana + PostgreSQL monitoring dashboards.</li>
+              <li>Delivered actionable product insights from NLTK sentiment analysis on customer support interactions.</li>
+              <li>Ensured reproducible experiments with DVC-versioned datasets/models and MLflow tracking.</li>
+              <li>Improved production model performance, fairness, and interpretability through ongoing evaluation and retraining.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">Azure ML</span>
@@ -605,6 +606,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>

@@ -91,6 +91,12 @@ img { max-width: 100%; }
 .nav-logo:hover  { color: var(--accent); }
 .logo-bracket    { color: var(--accent); }
 
+.nav-right {
+  display: flex;
+  gap: 1.75rem;
+  align-items: center;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -116,6 +122,14 @@ img { max-width: 100%; }
 }
 .nav-link:hover              { color: var(--text-primary); }
 .nav-link:hover::after       { width: 100%; }
+.nav-link.active              { color: var(--text-primary); }
+.nav-link.active::after       { width: 100%; }
+
+.nav-cta {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
 
 .hamburger {
   display: none;
@@ -156,6 +170,7 @@ img { max-width: 100%; }
 .mobile-menu li:last-child { border-bottom: none; }
 .mobile-link      { font-family: 'JetBrains Mono', monospace; color: var(--text-secondary); font-size: 1rem; }
 .mobile-link:hover{ color: var(--accent); }
+.mobile-cta       { display: flex; align-items: center; gap: 0.5rem; color: var(--accent); font-weight: 600; }
 
 /* =============================================
    Sections — shared
@@ -1033,6 +1048,37 @@ footer {
 }
 
 /* =============================================
+   Back to Top
+============================================= */
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 44px; height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(108,99,255,0.4);
+}
+.back-to-top:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* =============================================
    Blog
 ============================================= */
 .writing-actions { display: flex; justify-content: center; margin-top: 2.5rem; }
@@ -1257,6 +1303,7 @@ footer {
   :root { --section-pad: 80px; }
 
   .nav-links  { display: none; }
+  .nav-cta    { display: none; }
   .hamburger  { display: flex; }
   .section-line { max-width: 160px; }
 
